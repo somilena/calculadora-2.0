@@ -23,7 +23,10 @@
     1px 3px 1px rgba(16,16,16,0.4),
     1px 3px 2px rgba(16,16,16,0.2),
     1px 3px 6px rgba(16,16,16,0.2),
-    1px 3px 10px rgba(16,16,16,0.4);  
+    1px 3px 10px rgba(16,16,16,0.4);
+    text-shadow: wheat 1px 2px 5px;
+
+  
 }
 
 .fundobtns {
@@ -34,6 +37,8 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
+    box-shadow: 2px 1px 1px 1px gainsboro;
+    border-style: inset;
 }
 
 .textview {
