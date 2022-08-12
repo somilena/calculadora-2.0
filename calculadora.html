@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+    <head>
+        <title> Calculadora </title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <script src="botao.js"></script>
+        <meta charset = "UTF-8">
+    </head>
+   <body>       
+         <tr>
+            <td class="resultado">
+            </td>
+         </tr>
+         <tr>
+   <div>
+      <table class="calc border" id="calcor" border="0px" align="center">
+            <tr>
+               <th class="titulocalc" colspan="8">Calculadora</th>
+            </tr>
+            <tr>
+
+
+               <td colspan="8">
+               <form name="form" >
+                  <input maxlength="9"  class="textview" name="textview" readonly/> <br>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="back()" value="<" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick='c()' value="C" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert('/')" value="/" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert('*')" value="*" />
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(7)" value="7" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(8)" value="8" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(9)" value="9" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert('+')" value="+" />
+               </td>
+            </tr> 
+
+            <tr>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(4)" value="4" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(5)" value="5" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(6)" value="6" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert('-')" value="-" />
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(1)" value="1" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(2)" value="2" />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" onclick="insert(3)" value="3" />
+               </td>
+               <td rowspan="4" colspan="2" align="center">
+                  <input class="igualgrande" type="button" onclick='equal()' value="=" />
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" align="center">
+                  <input class="zerogrande" type="button" value='0' onclick="insert(0)" class='button' id='n0' />
+               </td>
+               <td colspan="2" align="center">
+                  <input class="fundobtns" type="button" value='.' onclick="insert('.')" class='button' id='n0' />
+               </td>
+            </tr>
+   </div>  <br>
+      </table> <br>
+      <table class="escolhacor" border="0.5px" align="center" bgcolor="lightblue" border="3"
+      cellpadding="10" cellspacing="5" bordercolor="darkblue">
+         <tr>
+            <td>Escolha a cor:</td>
+            <td>
+               <input type="color" id="cor" name="cor" style="Width:50px" onchange="mudar_cor(this.value)">
+<datalist id="mudar_cor">
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
